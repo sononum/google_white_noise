@@ -5,6 +5,6 @@ wc = dictionary.count
 
 loop do
   word = dictionary[rand wc]
-  `osascript -e 'tell application \"Safari\" to search the web for "#{word}" in document 1'`
+  `osascript -e 'tell application "Safari" to search the web for "#{word}" in document 1'`
   sleep(42 - rand(24))
 end
